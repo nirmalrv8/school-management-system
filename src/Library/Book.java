@@ -9,6 +9,7 @@ package Library;
  *
  * @author LuCif3R
  */
+public class Book {
     
     int Isbn;
     
