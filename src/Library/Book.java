@@ -20,7 +20,7 @@ public class Book {
     double Price;
     
     
-    void add_Book(int pISbn, String pname ,String pubYear , String language,String Catogry,int pquntity,int num,double price1 ){
+    void add_Book(int pISbn, String pname ,String pubYear , String language,String Catogry,int pquntity,int num,double price1){
     
         this.ISBN = pISbn;
         this.Book_name = pname;
@@ -33,7 +33,7 @@ public class Book {
     
     }
     
-    void stor_details(){
+    void stor_details(int pISbn, String pname ,String pubYear , String language,String Catogry,int pquntity,int num,double price1i){
     
     
     
@@ -49,11 +49,12 @@ public class Book {
     
     
     }
-    void update_book(int pISbn, String pname ,String pubYear , String language,String Catogry,int pquntity,int num,double price1){
+    void update_book(int pISbn){
     
     
     
     }
+
     
 
 }
