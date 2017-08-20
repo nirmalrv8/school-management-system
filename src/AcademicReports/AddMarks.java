@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package AcademicReports;
-import java.sql.*;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -37,6 +37,7 @@ public class AddMarks extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Add Results");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jLabel1.setText("Enter the Student ID");
@@ -143,7 +144,7 @@ public class AddMarks extends javax.swing.JFrame {
         
         s.setMarks(sid,subid,marks);
         
-        JOptionPane.showMessageDialog(null,"Sucsses"+sid+subid+marks);
+        JOptionPane.showMessageDialog(null,"Sucsses");
         
     }//GEN-LAST:event_jButton1ActionPerformed
 

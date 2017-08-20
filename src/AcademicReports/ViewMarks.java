@@ -4,9 +4,40 @@
  * and open the template in the editor.
  */
 package AcademicReports;
+import java.sql.*;
+import javax.swing.*;
 
-import sms.DBconnect;
 
 public class ViewMarks {
+  
+   public ResultSet getResults(String sid){
+   
+       Connection c;
+       c=DBclass.connect();
+       PreparedStatement ps;
+       ResultSet r=null;
+      try{
+       
+          
+          ps=c.prepareStatement("SELECT * FROM Marks WHERE regNum=?");
+          ps.setString(1, sid);
+          
+           r = ps.executeQuery();
+          
+           if(!r.isBeforeFirst())
+              JOptionPane.showMessageDialog(null, "Invalid Student ID number.Enter Student ID number again");
+           
+             return r;
+          
+      }
+      catch(SQLException ex){
+          JOptionPane.showMessageDialog(null, ex);
+          return null;
+      }
+       
+  
+      
+   
+   }
     
 }

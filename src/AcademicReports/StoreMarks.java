@@ -22,6 +22,8 @@ public void setMarks(String x,String y,String z){
        ps.setString(1,x);
        ps.setString(2,y);
        ps.setString(3,z);
+       
+       ps.execute();
    }
    
      catch(SQLException ex){
