@@ -3,9 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/LuCif3R/Desktop/New%20folder/SMS-Clayton-Col/src/sms/Main.java</file>
-            <file>file:/C:/Users/LuCif3R/Desktop/New%20folder/SMS-Clayton-Col/src/Library/Book.java</file>
-            <file>file:/C:/Users/LuCif3R/Desktop/New%20folder/SMS-Clayton-Col/src/sms/Profile.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/Notification/Notification.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/Library/Add_Books.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/ProfileManagement/StudentProfile.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/Library/Book.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/Library/Borrower.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/Library/Remove_Books.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/MainInterface/Login.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/ProfileManagement/SearchProfiles.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/ProfileManagement/EmployeeProfile.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/Library/LibMain.java</file>
+            <file>file:/C:/Users/Dell/Documents/GitHub/SMS-Clayton-Col/src/MainInterface/Main.java</file>
         </group>
     </open-files>
 </project-private>

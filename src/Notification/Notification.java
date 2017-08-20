@@ -7,6 +7,7 @@ package Notification;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.util.Date;
 
 /**
  *
@@ -14,9 +15,6 @@ import java.awt.Dimension;
  */
 public class Notification extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Notification
-     */
     public Notification() {
         initComponents();
         
@@ -24,12 +22,29 @@ public class Notification extends javax.swing.JFrame {
         
         setPreferredSize(new Dimension(200, 440));
         pack();
-        setLocationRelativeTo(null);
-        
-        
+        setLocationRelativeTo(null);  
         
     }
-
+    
+    //declare vars
+    String notID,message;
+    boolean isView;
+    Date create,read;
+    
+    //declare methods
+    public void showAll(){
+        
+    }
+    
+    public int checkNew(){
+       
+        return -99;
+    }    
+    
+    public void setRead(){
+        
+    }    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

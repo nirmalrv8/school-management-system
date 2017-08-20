@@ -29,8 +29,12 @@ public class ForgotPassword extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         
         //set textfield placeholder 
-        TextPrompt tp7 = new TextPrompt("Enter your username", jTextField1);       
-        tp7.changeAlpha(0.5f);
+        TextPrompt tp7 = new TextPrompt("Enter your reg num or staffID", jTextField1);       
+        tp7.changeAlpha(0.5f);        
+    }
+    
+    //method declaration
+    public void resetPass(){
         
     }
 
@@ -81,12 +85,12 @@ public class ForgotPassword extends javax.swing.JFrame {
                         .addGap(159, 159, 159)
                         .addComponent(jButton1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(108, 108, 108)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
-                        .addComponent(jButton3)))
-                .addContainerGap(120, Short.MAX_VALUE))
+                        .addComponent(jButton3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(84, 84, 84)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(94, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
