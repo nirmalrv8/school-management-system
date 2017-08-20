@@ -5,6 +5,7 @@
  */
 package Library;
 
+import Library.reports.ReportGenerate;
 import java.awt.Dimension;
 
 /**
@@ -23,6 +24,8 @@ public class LibMain extends javax.swing.JFrame {
         setPreferredSize(new Dimension(890, 658));
         pack();
         setLocationRelativeTo(null);
+        
+        
         
         
     }
@@ -44,6 +47,7 @@ public class LibMain extends javax.swing.JFrame {
         jButton6 = new javax.swing.JButton();
         jTextField3 = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
+        jButton7 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -53,14 +57,24 @@ public class LibMain extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jButton2.setText("Return Books");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
-        jButton2.setBounds(631, 245, 170, 82);
+        jButton2.setBounds(700, 300, 170, 82);
 
         jButton3.setText("Over Due Books");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3);
-        jButton3.setBounds(631, 421, 170, 82);
+        jButton3.setBounds(700, 480, 170, 82);
 
-        jButton4.setText("Add Book");
+        jButton4.setText("Reservations");
         jButton4.setRolloverEnabled(true);
         jButton4.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\LuCif3R\\Desktop\\Untitled-1.png")); // NOI18N
         jButton4.setSelected(true);
@@ -70,15 +84,25 @@ public class LibMain extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(630, 70, 170, 82);
+        jButton4.setBounds(700, 210, 170, 82);
 
         jButton5.setText("Issue Books");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton5);
-        jButton5.setBounds(631, 333, 170, 82);
+        jButton5.setBounds(700, 390, 170, 82);
 
         jButton6.setText("Remove book");
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
         getContentPane().add(jButton6);
-        jButton6.setBounds(631, 157, 170, 82);
+        jButton6.setBounds(700, 120, 170, 82);
 
         jTextField3.setBackground(new java.awt.Color(214, 218, 220));
         jTextField3.setFont(new java.awt.Font("Trajan Pro 3", 0, 14)); // NOI18N
@@ -113,6 +137,18 @@ public class LibMain extends javax.swing.JFrame {
         jTextField1.setBackground(new java.awt.Color(214, 218, 220));
         getContentPane().add(jTextField1);
         jTextField1.setBounds(127, 194, 402, 276);
+
+        jButton7.setText("Add Book");
+        jButton7.setRolloverEnabled(true);
+        jButton7.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\LuCif3R\\Desktop\\Untitled-1.png")); // NOI18N
+        jButton7.setSelected(true);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton7);
+        jButton7.setBounds(700, 30, 170, 82);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Library/newpackage/images/6333984637_7d08596f9e_b.jpg"))); // NOI18N
         jLabel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -157,7 +193,8 @@ public class LibMain extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField3MouseExited
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        new Add_Books().setVisible(true);
+       this.dispose();
+        new Reservations().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jTextField3FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField3FocusLost
@@ -178,6 +215,26 @@ public class LibMain extends javax.swing.JFrame {
     private void jLabel2MouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseReleased
       
     }//GEN-LAST:event_jLabel2MouseReleased
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+       new Remove_Books().setVisible(true);
+    }//GEN-LAST:event_jButton6MouseClicked
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+       new Add_Books().setVisible(true);
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        new Return_Books().setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+       new IssueBook().setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        new ReportGenerate("report1.jrxml");
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -220,6 +277,7 @@ public class LibMain extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;

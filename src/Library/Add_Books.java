@@ -56,7 +56,7 @@ public class Add_Books extends javax.swing.JFrame {
         jTextField5 = new javax.swing.JTextField();
         jTextField6 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(60, 161, 210));
@@ -66,7 +66,7 @@ public class Add_Books extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\LuCif3R\\Desktop\\download.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Library/newpackage/images/download.png"))); // NOI18N
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel1MouseClicked(evt);
@@ -155,9 +155,10 @@ public class Add_Books extends javax.swing.JFrame {
         getContentPane().add(jButton1);
         jButton1.setBounds(150, 380, 120, 40);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Library/newpackage/images/best-books-book-youll-ever-read.jpg"))); // NOI18N
-        getContentPane().add(jLabel9);
-        jLabel9.setBounds(-980, -40, 1690, 610);
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Library/newpackage/images/best-books-book-youll-ever-read.png"))); // NOI18N
+        jLabel10.setText("jLabel10");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(-920, -180, 1360, 670);
 
         setSize(new java.awt.Dimension(417, 486));
         setLocationRelativeTo(null);
@@ -234,6 +235,7 @@ public class Add_Books extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -241,7 +243,6 @@ public class Add_Books extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

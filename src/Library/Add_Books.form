@@ -40,7 +40,7 @@
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\LuCif3R\Desktop\download.png"/>
+          <Image iconType="3" name="/Library/newpackage/images/download.png"/>
         </Property>
       </Properties>
       <Events>
@@ -218,15 +218,16 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel9">
+    <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Library/newpackage/images/best-books-book-youll-ever-read.jpg"/>
+          <Image iconType="3" name="/Library/newpackage/images/best-books-book-youll-ever-read.png"/>
         </Property>
+        <Property name="text" type="java.lang.String" value="jLabel10"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="-980" y="-40" width="1690" height="610"/>
+          <AbsoluteConstraints x="-920" y="-180" width="1360" height="670"/>
         </Constraint>
       </Constraints>
     </Component>
