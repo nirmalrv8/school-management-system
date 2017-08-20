@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 public class StoreMarks {
 
-public void setMarks(String x,String y,String z){
+public void setMarks(String sid,String subid,String marks){
 
     Connection c;
     c= DBclass.connect();
@@ -19,9 +19,9 @@ public void setMarks(String x,String y,String z){
     
    try{
        ps=c.prepareStatement("INSERT INTO Marks VALUES(?,?,?)");
-       ps.setString(1,x);
-       ps.setString(2,y);
-       ps.setString(3,z);
+       ps.setString(1,sid);
+       ps.setString(2,subid);
+       ps.setString(3,marks);
        
        ps.execute();
    }
