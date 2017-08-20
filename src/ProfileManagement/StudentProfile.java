@@ -11,39 +11,31 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Date;
 
 /**
  *
  * @author Dell
  */
 public class StudentProfile extends javax.swing.JFrame {
-
-    /**
-     * Creates new form profile
-     */
+    
+    private static String regNum,name,clas,contact,address,email;
+    private static int age;
+    private static Date dob; 
+    private static Date regDate;
+    
     public StudentProfile() {
         initComponents();
         setPreferredSize(new Dimension(800, 500));
         pack();
-        setLocationRelativeTo(null); 
+        setLocationRelativeTo(null);         
         
-        //connection to database and fetching data
-        Connection c = DBconnect.connect();
-        if(c == null){return;}
-        PreparedStatement ps;
-        ResultSet result;
-        
-        try{
-            ps = c.prepareStatement("SELECT name from Student where regNum='001'");                 
-            ResultSet re = ps.executeQuery();
-            while(re.next()){
-                System.out.println(re.getString("name"));                        
-            }    
-        }
-        catch(SQLException ex){
-            System.out.println("sql error " + ex.getMessage());
-        }
     }
+    
+
+
+    
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -65,8 +57,11 @@ public class StudentProfile extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(800, 500));
 
         jLabel1.setText("Full Name");
 
@@ -103,41 +98,48 @@ public class StudentProfile extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
+                        .addGap(33, 33, 33)
+                        .addComponent(jButton1)
+                        .addGap(247, 247, 247)
+                        .addComponent(jLabel10))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(215, 215, 215)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
                             .addComponent(jLabel8)
                             .addComponent(jLabel6)
                             .addComponent(jLabel5)
                             .addComponent(jLabel4)
                             .addComponent(jLabel9)
-                            .addComponent(jLabel2)
                             .addComponent(jLabel7)
-                            .addComponent(jLabel1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(jButton1)
-                        .addGap(103, 103, 103)
-                        .addComponent(jLabel10)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel3))
+                                .addGap(41, 41, 41)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                .addContainerGap(346, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1)
+                    .addComponent(jLabel10))
+                .addGap(42, 42, 42)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jLabel10))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jButton1)))
-                .addGap(48, 48, 48)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(21, 21, 21)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -149,7 +151,7 @@ public class StudentProfile extends javax.swing.JFrame {
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
 
         pack();
@@ -203,6 +205,8 @@ public class StudentProfile extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -212,4 +216,18 @@ public class StudentProfile extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables
+
+    /**
+     * @return the jLabel11
+     */
+    public javax.swing.JLabel getjLabel11() {
+        return jLabel11;
+    }
+
+    /**
+     * @param jLabel11 the jLabel11 to set
+     */
+    public void setjLabel11(javax.swing.JLabel jLabel11) {
+        this.jLabel11 = jLabel11;
+    }
 }
