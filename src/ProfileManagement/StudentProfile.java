@@ -28,26 +28,8 @@ public class StudentProfile extends javax.swing.JFrame {
         initComponents();
         setPreferredSize(new Dimension(800, 500));
         pack();
-        setLocationRelativeTo(null); 
+        setLocationRelativeTo(null);         
         
-        Connection c = DBconnect.connect();
-        if(c == null){return;}
-        PreparedStatement ps;
-        ResultSet result;
-        
-        try{
-            ps = c.prepareStatement("SELECT * from Student where regNum='001'");                 
-            ResultSet re = ps.executeQuery();
-            while(re.next()){
-                name = re.getString("name");  
-                regNum = re.getString("regNum"); 
-            }                 
-        }
-        catch(SQLException ex){
-            System.out.println("sql error " + ex.getMessage());
-        }
-        jLabel11.setText(name);
-        jLabel12.setText(regNum);
     }
     
 
