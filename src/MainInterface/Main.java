@@ -162,22 +162,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        //connection to database and fetching data
-        Connection c = DBconnect.connect();
-        if(c == null){return;}
-        PreparedStatement ps;
-        ResultSet result;
         
-        try{
-            ps = c.prepareStatement("SELECT * from Notification where regNum='001'");                 
-            ResultSet re = ps.executeQuery();
-            while(re.next()){
-                System.out.println(re.getString("message"));                        
-            }    
-        }
-        catch(SQLException ex){
-            System.out.println("sql error " + ex.getMessage());
-        }
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

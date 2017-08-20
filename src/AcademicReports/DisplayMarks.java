@@ -9,7 +9,7 @@ package AcademicReports;
 import java.sql.*;
 
 import javax.swing.JOptionPane;
-import net.proteanit.sql.DbUtils;
+//import net.proteanit.sql.DbUtils;
 /**
  *
  * @author jayakody
@@ -25,7 +25,7 @@ public class DisplayMarks extends javax.swing.JFrame {
         ViewMarks v=new ViewMarks();
         rs=v.getResults(s);
       
-        jTable1.setModel(DbUtils.resultSetToTableModel(rs));
+        //jTable1.setModel(DbUtils.resultSetToTableModel(rs));
        
        
       
