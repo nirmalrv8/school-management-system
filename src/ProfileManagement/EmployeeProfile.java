@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sms;
+package ProfileManagement;
 
 /**
  *
  * @author Dell
  */
-public class Notifications {
+public class EmployeeProfile {
     
 }
