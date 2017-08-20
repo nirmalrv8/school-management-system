@@ -86,8 +86,20 @@ public class Reservations extends javax.swing.JFrame {
         });
         getContentPane().add(jTextField1);
         jTextField1.setBounds(70, 90, 256, 24);
+
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(190, 150, 178, 24);
+        jTextField2.setBounds(190, 140, 178, 30);
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField3);
         jTextField3.setBounds(190, 190, 178, 24);
         getContentPane().add(jTextField4);
@@ -125,43 +137,43 @@ public class Reservations extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("SansSerif", 3, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("BorrowersId");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(-10, 160, 200, 16);
+        jLabel1.setBounds(-10, 140, 200, 30);
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("SansSerif", 3, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Name");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(-10, 200, 200, 16);
+        jLabel2.setBounds(0, 180, 200, 30);
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("SansSerif", 3, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Isbn");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(-10, 240, 200, 16);
+        jLabel3.setBounds(-10, 230, 200, 20);
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("SansSerif", 3, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Bookname");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(-10, 280, 200, 16);
+        jLabel4.setBounds(0, 270, 200, 30);
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
         jLabel5.setFont(new java.awt.Font("SansSerif", 3, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Reserved Date");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(-10, 320, 200, 16);
+        jLabel5.setBounds(0, 320, 200, 30);
 
         jButton3.setText("Go Back");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -190,10 +202,9 @@ public class Reservations extends javax.swing.JFrame {
         getContentPane().add(jButton2);
         jButton2.setBounds(50, 500, 120, 32);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Library/newpackage/images/best-books-book-youll-ever-read.jpg"))); // NOI18N
-        jLabel6.setText("jLabel6");
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Library/newpackage/images/reservation.jpg"))); // NOI18N
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(-90, -50, 1780, 620);
+        jLabel6.setBounds(0, 0, 1910, 660);
 
         setSize(new java.awt.Dimension(843, 566));
         setLocationRelativeTo(null);
@@ -247,6 +258,14 @@ public class Reservations extends javax.swing.JFrame {
         ymouse = evt.getY();
 
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     /**
      * @param args the command line arguments

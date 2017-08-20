@@ -22,10 +22,11 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.view.JasperViewer;
 import MainInterface.DBconnect;
-/**
- *
- * @author Dell
- */
+
+
+
+
+
 public class ReportGenerate {
     public ReportGenerate(String report){
         toPDF(report);
