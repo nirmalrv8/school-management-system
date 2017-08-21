@@ -40,6 +40,7 @@ public class LibMain extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField2 = new javax.swing.JTextField();
+        jButton8 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -55,6 +56,15 @@ public class LibMain extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
+
+        jButton8.setText("Back");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton8);
+        jButton8.setBounds(40, 20, 55, 23);
 
         jButton2.setText("Return Books");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -75,8 +85,6 @@ public class LibMain extends javax.swing.JFrame {
         jButton3.setBounds(700, 480, 170, 82);
 
         jButton4.setText("Reservations");
-        jButton4.setRolloverEnabled(true);
-        jButton4.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\LuCif3R\\Desktop\\Untitled-1.png")); // NOI18N
         jButton4.setSelected(true);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,8 +147,6 @@ public class LibMain extends javax.swing.JFrame {
         jTextField1.setBounds(127, 194, 402, 276);
 
         jButton7.setText("Add Book");
-        jButton7.setRolloverEnabled(true);
-        jButton7.setRolloverIcon(new javax.swing.ImageIcon("C:\\Users\\LuCif3R\\Desktop\\Untitled-1.png")); // NOI18N
         jButton7.setSelected(true);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -236,6 +242,11 @@ public class LibMain extends javax.swing.JFrame {
         new ReportGenerate("report1.jrxml");
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        this.dispose();
+        new MainInterface.Main().setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -278,6 +289,7 @@ public class LibMain extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;

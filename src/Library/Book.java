@@ -10,14 +10,14 @@ package Library;
  * @author LuCif3R
  */
 public class Book {
-    int ISBN;
-    String Book_name;
-    String Pub_Year;
-    String Language;
-    String Catagory_type;
-    int Quntity;
-    int available_number;
-    double Price;
+    private int ISBN;
+    private String Book_name;
+    private String Pub_Year;
+    private String Language;
+    private String Catagory_type;
+    private int Quntity;
+    private int available_number;
+    private double Price;
     
     
     void add_Book(int pISbn, String pname ,String pubYear , String language,String Catogry,int pquntity,int num,double price1){
@@ -33,23 +33,23 @@ public class Book {
     
     }
     
-    void stor_details(int pISbn, String pname ,String pubYear , String language,String Catogry,int pquntity,int num,double price1i){
+    public void stor_details(int pISbn, String pname ,String pubYear , String language,String Catogry,int pquntity,int num,double price1i){
     
     
     
         } 
         
-    void searchbook(String word){
+    public void searchbook(String word){
     
         
         
     
     }
-    void remove_Book(int isbn){
+    public void remove_Book(int isbn){
     
     
     }
-    void update_book(int pISbn){
+    public void update_book(int pISbn){
     
     
     

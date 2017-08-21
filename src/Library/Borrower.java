@@ -10,10 +10,10 @@ package Library;
  * @author LuCif3R
  */
 public class Borrower {
-    String borrowerId;
-    int ISbn;
-    String BookName;
-    String BorrowersName;
+    private String borrowerId;
+    private int ISbn;
+    private String BookName;
+    private String BorrowersName;
     
     
     void setBorrower(String borrowID , String Bookname , String BorowName,int Isbn){

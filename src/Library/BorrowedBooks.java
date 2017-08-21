@@ -13,16 +13,16 @@ package Library;
 
 public class  BorrowedBooks extends Book{
     
-    String due_date;
-    double amount;
+    private String due_date;
+    private double amount;
     
     
-    double calculateFine(){
+    public double calculateFine(){
     
     return amount;
     }
     
-    void borrowBook(String ID,int ISbn){
+    public void borrowBook(String ID,int ISbn){
     
     }
     
