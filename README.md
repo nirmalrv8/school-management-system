@@ -1,4 +1,3 @@
 # SMS-Clayton-Col
 
-i'm nirmal.going to add the feature notifications bar
-ane ammee
+The school management system is build on java based technologies.
